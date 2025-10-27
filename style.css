@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #00A28F;
+    --secundary-color: #D9D9D9;
+    --third-color: #E9E0E0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.barra-lateral{
+    height: 100%;
+    width: 25%;
+    background-color: var(--primary-color);
+    position: absolute;
+}
+
+.configuracoes{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: end;
+    padding-right: 5%;
+    gap: 2%;
+    padding: 2% 5% 2% 0%;
+}
+
+.configuracoes button{
+    border: none;
+    background-color: transparent;
+}
+
+.btn-settings{
+    width: 10%;
+    transition: 0.3s ease, transform 0.1s ease;
+}
+
+.btn-settings :hover{
+    transform: translateY(-2px);
+}
+
+.btn-settings img{
+    width: 80%;
+}
+
+.pesquisa{
+    height: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+}
+
+.btn-lupa{
+    width: 10%;
+    height: 50%;
+    border: none;
+    background-color: transparent;
+    transition: 0.3s ease, transform 0.1s ease;
+}
+
+.btn-lupa :hover{
+    transform: translateY(-2px); 
+}
+
+.btn-lupa img{
+    width: 80%;
+    height: 90%;
+}
+
+.pesquisa input{
+    height: 50%;
+    width: 60%;
+    border-radius: 5px;
+}
+
+.btn-conversas{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+}
+
+.conversas{
+    display: flex;
+    border-bottom: 2px solid white;
+    padding: 2% 0 2% 5%;
+    align-items: center;
+    gap: 10%;
+}
+
+
+header {
+    height: 25%;
+    width: 75%;
+    background-color: var(--secundary-color);
+    margin-left: 25%;
+    display: flex;
+    padding-left: 5%;
+    align-items: center;
+    gap: 10%;
+}
+
+.btn-user-hd{
+    width: 10%;
+    height: 50%;
+    border: none;
+    background-color: transparent;
+}
+
+.btn-user-hd img{
+    height: 100%;
+}
+
+header h1{
+    font: bolder;
+    font-size: 60px;
+}
+
+main{
+    height: 60%;
+    width: 75%;
+    background-color: var(--third-color);
+    margin-left: 25%;
+    overflow-y: auto;
+}
+
+.enviada{
+    height: 20%;
+    padding: 2% 3% 2% 0;
+    display: flex;
+    justify-content: end;
+}
+
+.enviada div{
+    background-color: var(--primary-color);
+    width: 25%;
+    height: 100%;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.recebida{
+    height: 20%;
+    padding: 2% 0 2% 3%;
+}
+
+.recebida div{
+    background-color: var(--secundary-color);
+    width: 25%;
+    height: 100%;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+footer {
+    height: 15%;
+    width: 75%;
+    background-color: var(--secundary-color);
+    margin-left: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.envio{
+    background-color: aqua;
+    width: 70%;
+    height: 40%;
+}
+
+.btn-emoji{
+    width: 10%;
+    height: 70%;
+}
